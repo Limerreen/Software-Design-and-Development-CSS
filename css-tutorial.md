@@ -335,6 +335,14 @@ div > p {
 
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/3838bc0e-2b89-4201-81b5-85c6858dbd1a" />
+<img width="945" alt="image" src="https://github.com/user-attachments/assets/7d9e74b0-407e-44cb-b478-cdc2072a21c0" />
+<img width="941" alt="image" src="https://github.com/user-attachments/assets/bdacc10e-099b-4e25-b6ba-39d0a6ba8089" />
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/a57ce51d-1ea3-4e52-93db-9a477c3fb1a0" />
+
+
+
+
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
