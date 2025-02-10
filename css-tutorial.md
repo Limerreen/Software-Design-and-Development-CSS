@@ -232,7 +232,107 @@ div > p {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลลอรีสินค้า</title>
+
+    <style>
+        h1   {
+    color: rgb(0, 0, 0); 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.5;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        /* สไตล์เมนูนำทาง */
+        nav {
+            background-color: #ec85d5;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        .menu-item {
+            color: rgb(255, 251, 251);
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        
+        /* เปลี่ยนสีพื้นหลังของเมนูเมื่อเมาส์ชี้ */
+        .menu-item:hover {
+            background-color: #f7bee1;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu-item">หน้าแรก</a></li>
+            <li><a href="products.html" class="menu-item active">สินค้า</a></li>
+            <li><a href="about.html" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="top">แกลลอรีสินค้า</h1>
+    
+    <div class="gallery">
+        <figure>
+            <a href="../images/products/product1.jpg">
+                <img src="../images/products/product1.jpg" alt="product1" width="300" height="200">
+            </a>
+            <figcaption>ลิปสติก</figcaption>
+        </figure>
+
+        <figure>
+            <a href="../images/products/product2.jpg">
+                <img src="../images/products/product2.jpg" alt="product2" width="300" height="200">
+            </a>
+            <figcaption>แป้งตลับ</figcaption>
+        </figure>
+
+        <figure>
+            <a href="../images/products/product3.jpg">
+                <img src="../images/products/product3.jpg" alt="product3" width="300" height="200">
+            </a>
+            <figcaption>ครีมกันแดด</figcaption>
+        </figure>
+
+        <figure>
+            <a href="../images/products/product4.jpg">
+                <img src="../images/products/product4.jpg" alt="product4" width="300" height="200">
+            </a>
+            <figcaption>พาเลทตา</figcaption>
+        </figure>
+    </div>
+
+    <a href="#top">กลับด้านบน</a>
+</body>
+</html>
+
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
