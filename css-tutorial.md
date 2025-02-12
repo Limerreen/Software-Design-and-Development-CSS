@@ -446,9 +446,152 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+index.html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลลอรีสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu-item">หน้าแรก</a></li>
+            <li><a href="products.html" class="menu-item active">สินค้า</a></li>
+            <li><a href="about.html" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="top">แกลลอรีสินค้า</h1>
+    
+    <div class="gallery">
+        <div class="card">
+            <a href="../images/products/product1.jpg">
+                <img src="../images/products/product1.jpg" alt="ลิปสติก">
+            </a>
+            <figcaption>ลิปสติก</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product2.jpg">
+                <img src="../images/products/product2.jpg" alt="แป้งตลับ">
+            </a>
+            <figcaption>แป้งตลับ</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product3.jpg">
+                <img src="../images/products/product3.jpg" alt="ครีมกันแดด">
+            </a>
+            <figcaption>ครีมกันแดด</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product4.jpg">
+                <img src="../images/products/product4.jpg" alt="พาเลทตา">
+            </a>
+            <figcaption>พาเลทตา</figcaption>
+        </div>
+    </div>
+
+    <a href="#top" class="top-link">กลับด้านบน</a>
+</body>
+</html>
+--------------------------
+style.css
+/* ตั้งค่าทั่วไป */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f9f9f9;
+}
+
+/* สไตล์สำหรับหัวข้อ */
+h1 {
+    font-size: 32px;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: #ec85d5;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.menu-item {
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* เปลี่ยนสีเมื่อเมาส์ชี้ */
+.menu-item:hover {
+    background-color: #f7bee1;
+    border-radius: 5px;
+}
+
+/* แกลลอรีสินค้า */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* การ์ดสินค้า */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* คำอธิบายใต้สินค้า */
+figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ปุ่มกลับด้านบน */
+.top-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
 ```
+
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/39dbc55a-a9a1-4a59-8d22-7fe14438ffc4" />
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -544,12 +687,173 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลลอรีสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu-item">หน้าแรก</a></li>
+            <li><a href="products.html" class="menu-item active">สินค้า</a></li>
+            <li><a href="about.html" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="top">แกลลอรีสินค้า</h1>
+    
+    <div class="gallery">
+        <div class="card">
+            <a href="../images/products/product1.jpg">
+                <img src="../images/products/product1.jpg" alt="ลิปสติก">
+            </a>
+            <figcaption>ลิปสติก</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product2.jpg">
+                <img src="../images/products/product2.jpg" alt="แป้งตลับ">
+            </a>
+            <figcaption>แป้งตลับ</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product3.jpg">
+                <img src="../images/products/product3.jpg" alt="ครีมกันแดด">
+            </a>
+            <figcaption>ครีมกันแดด</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product4.jpg">
+                <img src="../images/products/product4.jpg" alt="พาเลทตา">
+            </a>
+            <figcaption>พาเลทตา</figcaption>
+        </div>
+    </div>
+
+    <a href="#top" class="top-link">กลับด้านบน</a>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* ตั้งค่าทั่วไป */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f8f5f2;
+    color: #333;
+}
+
+/* สไตล์สำหรับหัวข้อ */
+h1 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: #ff85a2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* เปลี่ยนสีเมื่อเมาส์ชี้ */
+.menu-item:hover {
+    background-color: #ffb6c1;
+    border-radius: 5px;
+}
+
+/* แกลลอรีสินค้า */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* การ์ดสินค้า */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ขยายเมื่อ hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* คำอธิบายใต้สินค้า */
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ปุ่มกลับด้านบน */
+.top-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b81;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.top-link:hover {
+    background-color: #ff3b5a;
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="948" alt="image" src="https://github.com/user-attachments/assets/9aaff421-8666-40d5-a8a5-3f06e7816475" />
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
@@ -662,12 +966,173 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลลอรีสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu-item">หน้าแรก</a></li>
+            <li><a href="products.html" class="menu-item active">สินค้า</a></li>
+            <li><a href="about.html" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="top">แกลลอรีสินค้า</h1>
+    
+    <div class="gallery">
+        <div class="card">
+            <a href="../images/products/product1.jpg">
+                <img src="../images/products/product1.jpg" alt="ลิปสติก">
+            </a>
+            <figcaption>ลิปสติก</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product2.jpg">
+                <img src="../images/products/product2.jpg" alt="แป้งตลับ">
+            </a>
+            <figcaption>แป้งตลับ</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product3.jpg">
+                <img src="../images/products/product3.jpg" alt="ครีมกันแดด">
+            </a>
+            <figcaption>ครีมกันแดด</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product4.jpg">
+                <img src="../images/products/product4.jpg" alt="พาเลทตา">
+            </a>
+            <figcaption>พาเลทตา</figcaption>
+        </div>
+    </div>
+
+    <a href="#top" class="top-link">กลับด้านบน</a>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+/* สไตล์หัวข้อ */
+h1 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: #ff85a2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* เปลี่ยนสีเมื่อเมาส์ชี้ */
+.menu-item:hover {
+    background-color: #ffb6c1;
+    border-radius: 5px;
+}
+
+/* แกลลอรีสินค้า */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* การ์ดสินค้า */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ขยายเมื่อ hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* คำอธิบายใต้สินค้า */
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ปุ่มกลับด้านบน */
+.top-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b81;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.top-link:hover {
+    background-color: #ff3b5a;
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/13c0fd4a-3936-4f11-98b9-522266f820f2" />
+
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
@@ -809,12 +1274,185 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลลอรีสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu-item">หน้าแรก</a></li>
+            <li><a href="products.html" class="menu-item active">สินค้า</a></li>
+            <li><a href="about.html" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="top">แกลลอรีสินค้า</h1>
+    
+    <div class="gallery">
+        <div class="card">
+            <a href="../images/products/product1.jpg">
+                <img src="../images/products/product1.jpg" alt="ลิปสติก" class="product-image">
+            </a>
+            <figcaption>ลิปสติก</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product2.jpg">
+                <img src="../images/products/product2.jpg" alt="แป้งตลับ" class="product-image">
+            </a>
+            <figcaption>แป้งตลับ</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product3.jpg">
+                <img src="../images/products/product3.jpg" alt="ครีมกันแดด" class="product-image">
+            </a>
+            <figcaption>ครีมกันแดด</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product4.jpg">
+                <img src="../images/products/product4.jpg" alt="พาเลทตา" class="product-image">
+            </a>
+            <figcaption>พาเลทตา</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product5.jpg">
+                <img src="../images/products/product5.jpg" alt="รองพื้น" class="product-image">
+            </a>
+            <figcaption>รองพื้น</figcaption>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product6.jpg">
+                <img src="../images/products/product6.jpg" alt="มาสคาร่า" class="product-image">
+            </a>
+            <figcaption>มาสคาร่า</figcaption>
+        </div>
+    </div>
+
+    <a href="#top" class="top-link">กลับด้านบน</a>
+</body>
+</html>
 ```
-```css
-[วางโค้ด CSS ที่นี่]
+```css/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+/* สไตล์หัวข้อ */
+h1 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: #ff85a2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* เปลี่ยนสีเมื่อเมาส์ชี้ */
+.menu-item:hover {
+    background-color: #ffb6c1;
+    border-radius: 5px;
+}
+
+/* แกลลอรีสินค้า */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* การ์ดสินค้า */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ขยายเมื่อ hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* คำอธิบายใต้สินค้า */
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ปุ่มกลับด้านบน */
+.top-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b81;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.top-link:hover {
+    background-color: #ff3b5a;
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/f31d7a15-8a84-46c5-8d30-5ec798bc0e3b" />
 
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
@@ -962,10 +1600,198 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลลอรีสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu-item">หน้าแรก</a></li>
+            <li><a href="products.html" class="menu-item active">สินค้า</a></li>
+            <li><a href="about.html" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="top">แกลลอรีสินค้า</h1>
+    
+    <div class="gallery">
+        <div class="card">
+            <a href="../images/products/product1.jpg">
+                <img src="../images/products/product1.jpg" alt="ลิปสติก" class="product-image">
+            </a>
+            <figcaption>ลิปสติก</figcaption>
+            <button class="add-to-cart" onclick="addToCart('ลิปสติก')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product2.jpg">
+                <img src="../images/products/product2.jpg" alt="แป้งตลับ" class="product-image">
+            </a>
+            <figcaption>แป้งตลับ</figcaption>
+            <button class="add-to-cart" onclick="addToCart('แป้งตลับ')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product3.jpg">
+                <img src="../images/products/product3.jpg" alt="ครีมกันแดด" class="product-image">
+            </a>
+            <figcaption>ครีมกันแดด</figcaption>
+            <button class="add-to-cart" onclick="addToCart('ครีมกันแดด')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product4.jpg">
+                <img src="../images/products/product4.jpg" alt="พาเลทตา" class="product-image">
+            </a>
+            <figcaption>พาเลทตา</figcaption>
+            <button class="add-to-cart" onclick="addToCart('พาเลทตา')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product5.jpg">
+                <img src="../images/products/product5.jpg" alt="คุชชั่น" class="product-image">
+            </a>
+            <figcaption>คุชชั่น</figcaption>
+            <button class="add-to-cart" onclick="addToCart('คุชชั่น')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <a href="../images/products/product6.jpg">
+                <img src="../images/products/product6.jpg" alt="มาสคาร่า" class="product-image">
+            </a>
+            <figcaption>มาสคาร่า</figcaption>
+            <button class="add-to-cart" onclick="addToCart('มาสคาร่า')">ใส่ตะกร้า</button>
+        </div>
+    </div>
+
+    <a href="#top" class="top-link">กลับด้านบน</a>
+
+    <script>
+        function addToCart(productName) {
+            alert(`เพิ่ม "${productName}" ลงในตะกร้าสำเร็จ!`);
+        }
+    </script>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+/* สไตล์หัวข้อ */
+h1 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: #ff85a2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* เปลี่ยนสีเมื่อเมาส์ชี้ */
+.menu-item:hover {
+    background-color: #ffb6c1;
+    border-radius: 5px;
+}
+
+/* แกลลอรีสินค้า */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* การ์ดสินค้า */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ขยายเมื่อ hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* คำอธิบายใต้สินค้า */
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ปุ่มกลับด้านบน */
+.top-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b81;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.top-link:hover {
+    background-color: #ff3b5a;
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/12d533a0-9d36-4127-a328-a7f7f9a28a8f" />
+
 
